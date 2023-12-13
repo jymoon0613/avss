@@ -1,4 +1,4 @@
-# 2021-2-CSC4031-SYNERGY
+# AVSS for Substation
 2021-2 융합캡스톤디자인_팀 시너지
 
 [![Python version](https://img.shields.io/badge/python-3.8.0-brightgreen.svg)](https://www.python.org)   
