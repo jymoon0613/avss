@@ -3,24 +3,55 @@ This is a Python implementation of the paper "***Automatic Voltage Stabilization
 
 [doi](https://doi.org/10.2298/CSIS220509050M)
 
-[![Python version](https://img.shields.io/badge/python-3.8.0-brightgreen.svg)](https://www.python.org)   
-**Team Leader**: [Jeong-pil](https://github.com/jeong-pil)
-**Team Member**: [Byeong-chan](https://github.com/oxox97), [Ji-yong](https://github.com/moonjiyong), [Min-young](https://github.com/Son0930)
+## Abstract
+The operating voltage in the substation must be maintained at its rated voltage within the specified standard because a voltage outside the specified range may cause a malfunction of the power facility and interfere with the stable power supply. Therefore, the voltage regulation process to maintain the rated voltage of the substation is essential for the stability of the power system. However, the voltage regulation process is currently performed manually by resident staff. Voltage regulation based on human judgment increases the uncertainty of voltage stabilization and makes efficient operation in consideration of the economic feasibility of power facilities difficult. Therefore, this paper proposes an automatic voltage stabilization system that can automatically perform voltage regulation. Instead of predicting the electrical load or overvoltage conditions studied so far, we focus on more direct, scalable input capacity prediction for an automatic voltage stabilization system. First, the proposed system predicts the input capacity required for a given situation through a trained stacked LSTM model. Second, an optimal regulation plan is derived through an optimization process that considers the economic feasibility of power facility operation. Additionally, the development of the user interface makes it possible to visualize the operation of algorithms and effectively communicate the models’ predictions to the user. Experimental results based on real substation data show that the proposed system can effectively automate the voltage regulation process.
 
-# 프로젝트 개요
-## 1. 문제 상황
-- 전력시스템의 안정성을 위해 전력계통의 운전전압은 일정한 정격전압으로 유지되어야 함
-- 운전전압이 규정된 전압 범위 이상(과전압) 혹은 이하(저전압)로 벗어나게 되면 전력설비의 고장을 야기하고 안정적인 전력 공급을 방해
-- 따라서, 정격전압 유지를 위한 전압조정 과정이 필요
-- 현재의 전압조정 과정에는 다음과 같은 문제가 존재 :  
+<p align="center">
+    <img width="600" alt="fig1" src="./src/fig1.png">
+</p>
 
-    **(1) 전압 조정을 위한 전력설비는 다빈도로 동작 시 기기 수명 감소와 잦은 고장으로 이어질 수 있음**   
-          *; 회사의 비용 부담 가중*    
-    
-    **(2) 현재의 전압조정 의사결정은 상주 직원의 개인적 판단에 의존**       
-          *; 전력설비 운용의 경제성을 고려하지 못하고 큰 불확실성을 수반*    
-    
+<p align="center">
+    <img width="1200" alt="fig2" src="./src/fig2.png">
+</p>
 
-## 2. 프로젝트 목표
-- 문제 상황을 해결하기 위해 전압조정 시스템의 자동화가 필요
-- 따라서, 본 프로젝트를 통해 **전압조정 시스템의 자동화를 위한 알고리즘을 개발**
+## Usage
+Command line for running the UI window: 
+```bash
+bokeh serve --show main.py
+```
+
+If you want to run the toy example, use the command line below.
+In the toy example, you can see more dynamic changes by using random integer values as input capacity instead of model prediction:
+```bash
+bokeh serve --show toy.py
+```
+
+## References
+Original project repository: [CSID-DGU/2021-2-CSC4031-SYNERGY](https://github.com/CSID-DGU/2021-2-CSC4031-SYNERGY)
+
+## Citation
+If you use this for research, please cite. Here is an example BibTeX entry:
+
+```
+@article{moon2023automatic,
+  title={Automatic voltage stabilization system for substation using deep learning},
+  author={Moon, Jiyong and Son, Minyeong and Oh, Byeongchan and Jin, Jeongpil and Shin, Younsoon},
+  journal={Computer Science and Information Systems},
+  number={00},
+  pages={50--50},
+  year={2023}
+}
+```
+```
+@inproceedings{moon2022development,
+  title={Development of Automatic Voltage Stabilization System for Substation Using Deep Learning},
+  author={Moon, Jiyong and Son, Minyeong and Oh, Byeongchan and Jin, Jeongpil and Kim, Kwangil and Shin, Younsoon},
+  booktitle={International Conference on Innovative Computing},
+  pages={133--134},
+  year={2022},
+  organization={Springer}
+}
+```
+
+## Contact
+If you have any questions about codes, please contact us by asdwldyd123@gmail.com.
