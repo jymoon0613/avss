@@ -14,6 +14,13 @@ The operating voltage in the substation must be maintained at its rated voltage 
     <img width="1200" alt="fig2" src="./src/fig2.png">
 </p>
 
+## Dependencies
+- Python 3.8
+- pandas 1.4.1
+- numpy 1.21.5
+- bokeh 2.4.2
+- tensorflow 2.6.0
+
 ## Usage
 Command line for running the UI window: 
 ```bash
