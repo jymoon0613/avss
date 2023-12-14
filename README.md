@@ -3,6 +3,8 @@ This is a Python implementation of the paper "***Automatic Voltage Stabilization
 
 [doi](https://doi.org/10.2298/CSIS220509050M)
 
+Original project repository is [here](https://github.com/CSID-DGU/2021-2-CSC4031-SYNERGY).
+
 ## Abstract
 The operating voltage in the substation must be maintained at its rated voltage within the specified standard because a voltage outside the specified range may cause a malfunction of the power facility and interfere with the stable power supply. Therefore, the voltage regulation process to maintain the rated voltage of the substation is essential for the stability of the power system. However, the voltage regulation process is currently performed manually by resident staff. Voltage regulation based on human judgment increases the uncertainty of voltage stabilization and makes efficient operation in consideration of the economic feasibility of power facilities difficult. Therefore, this paper proposes an automatic voltage stabilization system that can automatically perform voltage regulation. Instead of predicting the electrical load or overvoltage conditions studied so far, we focus on more direct, scalable input capacity prediction for an automatic voltage stabilization system. First, the proposed system predicts the input capacity required for a given situation through a trained stacked LSTM model. Second, an optimal regulation plan is derived through an optimization process that considers the economic feasibility of power facility operation. Additionally, the development of the user interface makes it possible to visualize the operation of algorithms and effectively communicate the models’ predictions to the user. Experimental results based on real substation data show that the proposed system can effectively automate the voltage regulation process.
 
@@ -34,7 +36,7 @@ bokeh serve --show toy.py
 ```
 
 ## References
-Original project repository: [CSID-DGU/2021-2-CSC4031-SYNERGY](https://github.com/CSID-DGU/2021-2-CSC4031-SYNERGY)
+- [CSID-DGU/2021-2-CSC4031-SYNERGY](https://github.com/CSID-DGU/2021-2-CSC4031-SYNERGY)
 
 ## Citation
 If you use this for research, please cite. Here is an example BibTeX entry:
