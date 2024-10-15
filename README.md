@@ -42,17 +42,18 @@ bokeh serve --show toy.py
 If you use this for research, please cite. Here is an example BibTeX entry:
 
 ```
-@article{moon2023automatic,
+@Article{moon2024automatic,
   title={Automatic voltage stabilization system for substation using deep learning},
   author={Moon, Jiyong and Son, Minyeong and Oh, Byeongchan and Jin, Jeongpil and Shin, Younsoon},
   journal={Computer Science and Information Systems},
-  number={00},
-  pages={50--50},
-  year={2023}
+  volume={21},
+  number={2},
+  pages={437--452},
+  year={2024}
 }
 ```
 ```
-@inproceedings{moon2022development,
+@Inproceedings{moon2022development,
   title={Development of Automatic Voltage Stabilization System for Substation Using Deep Learning},
   author={Moon, Jiyong and Son, Minyeong and Oh, Byeongchan and Jin, Jeongpil and Kim, Kwangil and Shin, Younsoon},
   booktitle={International Conference on Innovative Computing},
